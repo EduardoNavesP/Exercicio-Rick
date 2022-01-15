@@ -1,12 +1,15 @@
 const imagem = document.querySelector('img');
 const botao = document.querySelector('button');
 const nomeDoPersonagem = document.querySelector('#nome');
-const especie = document.querySelector ('#specie');
+const genetica = document.querySelector ('#genetica');
 const condicao = document.querySelector('#status');
 
+gerarValorAletorio = () => {
+    return Math.floor(Math.random() *5);
+}
 pegarPersonagem = () => {
     
-    return fetch('https://rickandmortyapi.com/api/character/3', {
+    return fetch('https://rickandmortyapi.com/api/character/${numeroAletorio}', {
         method: 'GET',
         headers: {
             Accept: 'application/json',
