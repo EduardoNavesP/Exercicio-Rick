@@ -20,10 +20,13 @@ main {
 }
 
 main > section img {
-    height: 500px;
+    height: 300px;
     margin: 15px 0;
     width: 500px;
 }
+
+
+
 
 main > section button {
     background-color: white;
